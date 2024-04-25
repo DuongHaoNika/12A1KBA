@@ -1,0 +1,210 @@
+* {
+  border: none;
+  outline: none;
+}
+
+.login-container {
+  /* background-image: url("/images/bg-01.jpg"); */
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* .login-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+} */
+
+.login-form {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 33px;
+}
+
+.login-bg {
+  position: relative;
+}
+
+.wrap-login {
+  width: 390px;
+  overflow: hidden;
+  background: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-title {
+  padding-bottom: 41px;
+  font-size: 28px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 29px 0;
+  display: flex;
+  align-items: center;
+}
+
+.login-input {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: 0 0;
+  padding: 0 10px 0 80px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login-input::placeholder {
+  color: #000;
+  font-size: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  left: 32px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #d41872;
+  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+}
+
+.focus-input::after {
+  font-family: Linearicons-Free;
+  font-size: 18px;
+  color: #999;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.wrap-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.login-btn {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 42px;
+  border-radius: 21px;
+  background: #d41844;
+  background: -webkit-linear-gradient(left, #b43d43, #d41834, #fa425e);
+  background: -o-linear-gradient(left, #b24560, #d41834, #c22244);
+  background: -moz-linear-gradient(left, #b2455e, #d13035, #b92447);
+  background: linear-gradient(left, #a32a36, #7d1434, #992e35);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login-btn:hover {
+  opacity: 0.7;
+}
+
+.show-hide-password {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  top: -9px;
+  display: none;
+}
