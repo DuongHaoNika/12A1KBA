@@ -12,10 +12,11 @@ model User {
   id Int @id @default(autoincrement())
   username String @unique
   password String
-  userinfo Userinfo?
+  student Student?
+  teacher Teacher?
 }
 
-model Userinfo {
+model Student {
   id Int @id @default(autoincrement())
   email String @unique
   img String
@@ -26,13 +27,19 @@ model Userinfo {
   facebook String
   userid Int @unique
   user User @relation(fields: [userid], references: [id])
+  teacherId Int @unique
+  teacher Teacher @relation(fields: [teacherId], references: [id])
 }
 
 model Teacher {
   id Int @id @default(autoincrement())
-  
-}
-
-model Student {
-  id Int @id @default(autoincrement())
+  email String @unique
+  img String
+  name String
+  age Int
+  sex Boolean 
+  facebook String
+  userid Int @unique
+  user User @relation(fields: [userid], references: [id])
+  student Student?
 }
